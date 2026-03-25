@@ -1,0 +1,196 @@
+/* ===== Global ===== */
+:root {
+    --primary-dark: #1a2a3a;
+    --primary-blue: #2c5f7c;
+    --accent-blue: #3498db;
+    --cta-blue: #2196F3;
+    --hero-overlay: rgba(20, 50, 70, 0.7);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding-top: 56px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: var(--primary-dark);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.brand-geo { color: #fff; font-size: 1.6rem; font-weight: 700; }
+.brand-4   { color: var(--accent-blue); font-size: 2rem; font-weight: 900; }
+.brand-dev { color: #fff; font-size: 1.6rem; font-weight: 300; }
+
+.navbar .nav-link { color: rgba(255,255,255,0.85); }
+.navbar .nav-link:hover,
+.navbar .nav-link.active { color: #fff; }
+
+/* ===== Hero ===== */
+.hero-section {
+    position: relative;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1a3a2a 0%, #1a2a3a 40%, #2c5f7c 100%);
+    background-size: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: var(--hero-overlay);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 60px 0;
+}
+
+.hero-section h1 {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.search-bar .form-control {
+    border-radius: 0;
+    height: 48px;
+}
+
+.search-bar .btn {
+    height: 48px;
+}
+
+/* ===== CTA Banner ===== */
+.cta-banner {
+    background: linear-gradient(135deg, var(--cta-blue), #1e88e5);
+}
+
+.cta-banner h4 { font-weight: 600; }
+
+/* ===== Featured ===== */
+.featured-section a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.featured-section a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Partners ===== */
+#partners h4 {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+/* ===== About Page ===== */
+.page-header {
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0d2137 0%, #1a3a5a 100%);
+    color: #fff;
+}
+
+.page-header h1 {
+    text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.partner-card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.partner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* ===== Training Page ===== */
+.module-card {
+    border-left: 4px solid var(--accent-blue);
+    transition: box-shadow 0.2s;
+}
+
+.module-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.module-card .btn {
+    min-width: 130px;
+}
+
+/* ===== Conference Page ===== */
+.session-block {
+    border-left: 4px solid var(--cta-blue);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.presenter-card {
+    text-align: center;
+}
+
+.presenter-card .bi {
+    font-size: 3rem;
+    color: var(--primary-blue);
+}
+
+/* ===== Tools Page (Map) ===== */
+#mapid {
+    height: 600px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== Dataset Page ===== */
+.filter-sidebar .form-check {
+    margin-bottom: 0.3rem;
+}
+
+.dataset-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: box-shadow 0.2s;
+}
+
+.dataset-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.dataset-card .badge {
+    font-size: 0.75rem;
+}
+
+/* ===== Contact Page ===== */
+.contact-form .form-control,
+.contact-form .form-select {
+    border-radius: 6px;
+}
+
+/* ===== Footer ===== */
+footer a:hover {
+    text-decoration: underline !important;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .hero-section { min-height: 380px; }
+    .hero-section h1 { font-size: 1.8rem; }
+    #mapid { height: 400px; }
+}
+
+/* ===== Error page ===== */
+.error-section {
+    min-height: 300px;
+    background: linear-gradient(135deg, #0d3b4a 0%, #1a4a5a 100%);
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
